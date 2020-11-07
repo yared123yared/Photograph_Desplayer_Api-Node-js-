@@ -11,4 +11,12 @@ router.get('/photographers', controllers.getAllPhotographers);
 
 router.get('/photographers/:photographerId', controllers.getPhotographerById);
 
+// router.get('/photographers/:photographerEmail', controllers.getPhotographerByEmail);
+
+router.put('/photographers/:photographerId', controllers.updatPhotographer);
+
+router.delete('/photographers/:photographerId', controllers.deletePhotographer);
+
+
+
 module.exports = router;
