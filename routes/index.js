@@ -7,4 +7,8 @@ router.get('/', (req, res) => res.send('Welcome'))
 
 router.post('/photographers', controllers.createPhotographer);
 
+router.get('/photographers', controllers.getAllPhotographers);
+
+router.get('/photographers/:photographerId', controllers.getPhotographerById);
+
 module.exports = router;
